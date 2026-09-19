@@ -1,7 +1,7 @@
 # Tumblr Community Multi-Reblog
 
 Tumblr Community Multi-Reblog adds multi-select controls to Tumblr's native
-Community destination picker. Select two or more Communities, approve the batch
+Community destination picker. Select one or more Communities, approve the batch
 once, and the extension processes each reblog sequentially in a background tab.
 
 ## Features
@@ -47,7 +47,7 @@ Chromium-based browsers use the equivalent `chrome` API build.
 1. Sign in to Tumblr.
 2. Open a post's reblog composer.
 3. Open the destination selector and choose **Communities**.
-4. Select at least two Communities.
+4. Select one or more Communities.
 5. Choose **Reblog to N** and approve the confirmation.
 6. Keep the browser open until the toolbar badge and notification report
    completion.

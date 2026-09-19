@@ -193,10 +193,10 @@
     const count = state.selected.size;
     footer.querySelector(".tmr-selection-summary").textContent =
       count ? `${count} ${count === 1 ? "Community" : "Communities"} selected` :
-        "Select two or more Communities";
+        "Select one or more Communities";
     const submit = footer.querySelector(".tmr-submit");
     submit.textContent = count ? `Reblog to ${count}` : "Reblog to selected";
-    submit.disabled = count < 2;
+    submit.disabled = count === 0;
     const visibleCommunities = communityButtons.map(communityFromButton);
     const allVisibleSelected = visibleCommunities.length > 0 &&
       visibleCommunities.every((community) => state.selected.has(community.handle));
@@ -452,11 +452,11 @@
   }
 
   async function startRun() {
-    if (state.running || state.selected.size < 2) return;
+    if (state.running || state.selected.size === 0) return;
     const communities = [...state.selected.values()];
     const names = communities.map((community) => `• ${community.name}`).join("\n");
     const approved = window.confirm(
-      `Reblog this post to ${communities.length} Communities?\n\n${names}\n\n` +
+      `Reblog this post to ${communities.length} ${communities.length === 1 ? "Community" : "Communities"}?\n\n${names}\n\n` +
       "Tumblr will process them one at a time after this confirmation."
     );
     if (!approved) return;

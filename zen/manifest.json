@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
   "name": "Tumblr Community Multi-Reblog",
-  "version": "1.5.5",
-  "description": "Select several Tumblr Communities and reblog to all of them with one confirmation.",
+  "version": "1.5.6",
+  "description": "Select one or more Tumblr Communities and reblog with one confirmation.",
   "browser_specific_settings": {
     "gecko": {
       "id": "tumblr-community-multireblog-zen@local",

@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.5.6
+
+- Allow a reblog run when exactly one Community is selected.
+- Keep the existing confirmation, destination verification, progress, and retry
+  safeguards for single-Community runs.
+- Use correct singular wording in the confirmation dialog.
+
 ## 1.5.5
 
 - Verify the intended Community twice after destination selection.

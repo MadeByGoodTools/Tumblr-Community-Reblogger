@@ -8,14 +8,14 @@ background Tumblr reblog tab and processes each selected Community sequentially.
 
 ## Testing
 
-A Tumblr account that belongs to at least two Communities is required for a
+A Tumblr account that belongs to at least one Community is required for a
 complete functional test.
 
 1. Sign in to a suitable Tumblr test account.
 2. Open any rebloggable post.
 3. Open **Reblog…** and the destination selector.
 4. Select the **Communities** tab.
-5. Select two or more Communities or choose **Select all**.
+5. Select one or more Communities or choose **Select all**.
 6. Choose **Reblog to N** and approve the confirmation.
 7. Observe progress from the toolbar badge and popup.
 
