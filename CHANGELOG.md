@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.5.7
+
+- Replace Chromium manifest and notification SVG icons with PNG assets so
+  Brave and other Chromium-based browsers can decode them reliably.
+- Add the standard 16, 32, 48, and 128 pixel Chromium icon sizes.
+
 ## 1.5.6
 
 - Allow a reblog run when exactly one Community is selected.

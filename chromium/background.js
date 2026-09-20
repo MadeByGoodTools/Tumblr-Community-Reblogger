@@ -140,7 +140,7 @@ async function finishJob(tabId, job) {
   badge(job.failures ? "!" : "✓", job.failures ? "#ff4930" : "#00cf35");
   await chrome.notifications.create(`tmr-${job.id}`, {
     type: "basic",
-    iconUrl: chrome.runtime.getURL("icons/icon-96.svg"),
+    iconUrl: chrome.runtime.getURL("icons/icon-128.png"),
     title,
     message
   });
